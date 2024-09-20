@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ul>
+        {%for item in usuarios%}
+        <li>{{item}}</li>
+        {% endfor%}
+    </ul> -->
+    <table border="1">
+        
+        {% for usuario in usuarios %}
+        <tr>
+            <td>{{usuario['nome']}}</td>
+            <td>{{usuario['endereco']}}</td>
+            <td>{{usuario['telefone']}}</td>
+            <td>{{usuario['email']}}</td>
+            <td>{{usuario['cpf']}}</td>
+            <td>{{usuario['tipo_de_conta']}}</td>
+        </tr>
+        {% endfor %}
+        
+        
+
+
+
+        <!--  <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr> -->
+    </table>
+</body>
+</html>

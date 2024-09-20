@@ -1,0 +1,30 @@
+{% extends 'base.html '%} #extends - herança
+{% block conteudo%}
+
+    <p style="color: aliceblue;">Aqui é a pag Sobre</p>
+    <h1 style="color: aliceblue;">{{palavra}}</h1>
+    <h1 style="color: aliceblue;">{{nome}}</h1>
+    <!--  <h1 style="color: aliceblue;">{{idade}}</h1> -->
+    <h1 style="color: aliceblue;">Olá {{nome}}! Você tem {{idade}} anos</h1>
+
+    <!-- {%if nome == "" %} 
+            <h2 style="color: aliceblue;">Olá visitante </h2>
+        {%endif%}
+
+        {%if nome %} 
+            <h2 style="color: aliceblue;">Atv2 {{nome}}</h2>
+        {%endif%} -->
+
+        <!-- {%if categoria == "" %} 
+        <h2 style="color: aliceblue;">{{produtos}}</h2>
+    {%endif%}
+
+    {%if categoria %} 
+        <h2 style="color: aliceblue;">produtos[nome] produtos[categoria]</h2>
+    {%endif%} -->
+
+
+
+
+
+{% endblock%}
