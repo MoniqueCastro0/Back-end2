@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %} Titulo padrão caso não tenha outro {%endblock%}</title>
+</head>
+<body style="background-image: url(../static/img-tech.webp); background-repeat: no-repeat; background-size: 100%
+;">
+
+    {% include 'menu.html'%}
+
+    <main>
+        {%block alert %}
+
+        {%endblock%}
+    </main>
+
+    <main>
+        {%block conteudo %}
+
+        {%endblock%}
+    </main>
+
+    <main>
+        {%block sidebar %}
+
+        {%endblock%}
+    </main>
+    <main>
+        {%block navegacao %}
+
+        {%endblock%}
+    </main>
+    <!-- <footer style="background-color: rgba(0, 255, 242, 0.753); width: 100%; padding: 20px; color:rgb(255, 255, 255);">
+        rodape
+    </footer> -->
+
+    {% include 'footer.html'%}
+</body>
+</html>
+

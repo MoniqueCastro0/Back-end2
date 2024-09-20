@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Futas caras</h1>
+    <h2>Lista de Frutas com preço Maior que R$3,00</h2>
+
+    <!-- Aqui estamos exibindo todas as frutas do banco de dados -->
+    <ul>
+    {%for fruta in frutas%}
+    <li>{{fruta.nome}} - R${{fruta.preco}}</li>
+    {% else %}
+        <li>Nenhuma fruta encontrada com preço maior que R$3,00</li>
+    {%endfor%}
+    </ul>
+    
+</body>
+</html>
